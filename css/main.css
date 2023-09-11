@@ -1,0 +1,25 @@
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./section.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Roboto Slab', sans-serif;
+}
+
+.section-end {
+  width: 50vw;
+  margin: 0 auto;
+  margin-bottom: 17px;
+
+  border: 3px solid #d7af464d;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
