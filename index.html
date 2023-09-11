@@ -12,16 +12,29 @@
 		<div class="header-bg"></div>
 		<div class="header">
 			<div class="logo"></div>
-			<ul class="nav">
-				<li><a class="nav-link" href="#">Главная</a></li>
-				<li><a class="nav-link" href="#">Портфолио</a></li>
-				<li><a class="nav-link" href="#">Контакты</a></li>
-				<li><a class="nav-btn" href="#">Написать</a></li>
+			<ul class="nav-desktop">
+				<li><a class="nav-desktop-link" href="#">Главная</a></li>
+				<li><a class="nav-desktop-link" href="#">Портфолио</a></li>
+				<li><a class="nav-desktop-link" href="#">Контакты</a></li>
+				<li><a class="nav-desktop-btn" href="#">Написать</a></li>
 			</ul>
+
+			<input class="burger" id="burger" type="checkbox">
+			<label class="burger-img" for="burger"></label>
+			<div class="nav-mobile">
+				<ul class="menu-mobile">
+					<li><a href="#about" class="menu-mobile__link">Главная</a></li>
+					<li><a href="#portfolio" class="menu-mobile__link">Портфолио</a></li>
+					<li><a href="#" class="menu-mobile__link">Контакты</a></li>
+				</ul>
+			</div>
 		</div>
 
 		<div class="wrapper">
             <hr class="section-end">
+
+			<section id="about"  class="about "></section>
+			<hr class="section-end">
 
 			<section id="portfolio" class="portfolio">
 				<h2 class="portfolio__title">Примеры моей вёрстки</h2>

@@ -1,6 +1,5 @@
 .wrapper {
 	width: 90vw;
-	height: 1000px;
 	margin: 0 auto;
 	margin-top: 58px;
 	padding-top: 15px;
@@ -188,4 +187,9 @@
 	}
 
 	.work-item {width: 245px;}
+}
+
+
+.about {
+	height: 1000px;
 }
