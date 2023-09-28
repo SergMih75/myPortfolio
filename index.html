@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="./css/header.css">
 		<link rel="stylesheet" href="./css/footer.css">
 		<link rel="stylesheet" href="./css/section.css">
+		<link rel="stylesheet" href="./css/popup.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900" rel="stylesheet"/>
 		<title>Document</title>
 	</head>
@@ -16,10 +17,10 @@
 		<div class="header">
 			<div class="logo"></div>
 			<ul class="nav-desktop">
-				<li><a class="nav-desktop-link" href="#">Главная</a></li>
-				<li><a class="nav-desktop-link" href="#">Портфолио</a></li>
+				<li><a class="nav-desktop-link" href="#about">Главная</a></li>
+				<li><a class="nav-desktop-link" href="#portfolio">Портфолио</a></li>
 				<li><a class="nav-desktop-link" href="#">Контакты</a></li>
-				<li><a class="nav-desktop-btn" href="#">Написать</a></li>
+				<li><a class="nav-desktop-btn" href="#popup-contact">Написать</a></li>
 			</ul>
 
 			<input class="burger" id="burger" type="checkbox">
@@ -74,6 +75,27 @@
 			</div>
 		</div>
 
+
+		<div class="popup-contact"  id="popup-contact">
+			<div class="popup-contact__table">
+				<div class="popup-contact__close">Закрыть</div>
+				<h2 class="popup-contact__title">Оставьте свои данные для связи</h2>
+				<form action="#" class="popup-contact__form">
+					<div class="input-box">
+						<input type="text" id="name"  class="popup-contact__input" required>
+						<label for="name" class="popup-contact__label">Как к вам обращаться</label>
+					</div>
+					<div class="input-box">
+						<input type="phone" id="phone"  class="popup-contact__input" required>
+						<label for="phone" class="popup-contact__label">Как с вами связаться</label>
+					</div>
+					<textarea name="message" id="message" class="popup-contact__textarea" cols="30" rows="10" spellcheck="true" placeholder="Оставьте ваше сообщение..."></textarea>
+					<button class="popup-contact__btn">Отправить</button>
+				</form>
+			</div>
+		</div>
+
 		<script src="./js/main.js" type="text/javascript"></script>
+		<script src="./js/popup-contact.js" type="text/javascript"></script>
 	</body>
 </html>
