@@ -5,11 +5,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/main.css" />
-		<link rel="stylesheet" href="./css/header.css">
-		<link rel="stylesheet" href="./css/footer.css">
-		<link rel="stylesheet" href="./css/section.css">
-		<link rel="stylesheet" href="./css/popup.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900" rel="stylesheet"/>
+		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
+		<link rel="stylesheet" href="./css/section.css" />
+		<link rel="stylesheet" href="./css/popup.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900"
+			rel="stylesheet"
+		/>
 		<title>Document</title>
 	</head>
 	<body>
@@ -23,47 +26,80 @@
 				<li><a class="nav-desktop-btn" href="#popup-contact">Написать</a></li>
 			</ul>
 
-			<input class="burger" id="burger" type="checkbox">
+			<input class="burger" id="burger" type="checkbox" />
 			<label class="burger-img" for="burger"></label>
 			<div class="nav-mobile">
 				<ul class="menu-mobile">
-					<li><a href="#about" class="menu-mobile__link"  data-text = "Главная">Главная</a></li>
-					<li><a href="#portfolio" class="menu-mobile__link"  data-text = "Портфолио">Портфолио</a></li>
-					<li><a href="#" class="menu-mobile__link"  data-text = "Контакты">Контакты</a></li>
+					<li>
+						<a href="#about" class="menu-mobile__link" data-text="Главная"
+							>Главная</a
+						>
+					</li>
+					<li>
+						<a href="#portfolio" class="menu-mobile__link" data-text="Портфолио"
+							>Портфолио</a
+						>
+					</li>
+					<li>
+						<a href="#" class="menu-mobile__link" data-text="Контакты"
+							>Контакты</a
+						>
+					</li>
 				</ul>
 			</div>
 		</div>
 
 		<div class="wrapper">
-            <hr class="section-end">
+			<hr class="section-end" />
 
-			<section id="about"  class="about "></section>
-			<hr class="section-end">
+			<section id="about" class="about"></section>
+			<hr class="section-end" />
 
 			<section id="portfolio" class="portfolio">
 				<h2 class="portfolio__title">Примеры моей вёрстки</h2>
 				<div class="work-block">
 					<div class="work-item">
-                        <img src="./img/pic/one_page_site.png" alt="Скрин сайта">
+						<img src="./img/pic/one_page_site.png" alt="Скрин сайта" />
 
 						<div class="work-item__text">
-							<h3 class="work-item__text-title">Одноэкранный сайт с купоном на скидку</h3>
+							<h3 class="work-item__text-title">
+								Одноэкранный сайт с купоном на скидку
+							</h3>
 							<p class="work-item__text-subtitle">Реализовано в проекте:</p>
 							<ul>
-								<li class="work-item__text-text  text-position">Одноэкранный рекламный сайт компании</li>
-								<li class="work-item__text-text  text-position">Получение скидочного купона</li>
-								<li class="work-item__text-text  text-position">Переход на сайт рекламируемой компании</li>
-								<li class="text-position" ><a class="work-item__text-link" target="_blank" href="https://sergmih75.github.io/One-pages-site/">Смотреть проект</a></li>
-								<li class="text-position" ><a class="work-item__text-link" target="_blank" href="https://github.com/SergMih75/One-pages-site">Смотреть код на GitHub</a></li>
+								<li class="work-item__text-text text-position">
+									Одноэкранный рекламный сайт компании
+								</li>
+								<li class="work-item__text-text text-position">
+									Получение скидочного купона
+								</li>
+								<li class="work-item__text-text text-position">
+									Переход на сайт рекламируемой компании
+								</li>
+								<li class="text-position">
+									<a
+										class="work-item__text-link"
+										target="_blank"
+										href="https://sergmih75.github.io/One-pages-site/"
+										>Смотреть проект</a
+									>
+								</li>
+								<li class="text-position">
+									<a
+										class="work-item__text-link"
+										target="_blank"
+										href="https://github.com/SergMih75/One-pages-site"
+										>Смотреть код на GitHub</a
+									>
+								</li>
 							</ul>
 						</div>
-                    </div>
-                    <div class="work-item"></div>
+					</div>
+					<div class="work-item"></div>
 				</div>
 			</section>
 
-            <hr class="section-end">
-
+			<hr class="section-end" />
 		</div>
 
 		<div class="footer">
@@ -75,21 +111,127 @@
 			</div>
 		</div>
 
-
-		<div class="popup-contact"  id="popup-contact">
+		<div class="popup-contact" id="popup-contact">
 			<div class="popup-contact__table">
 				<div class="popup-contact__close">Закрыть</div>
 				<h2 class="popup-contact__title">Оставьте свои данные для связи</h2>
 				<form action="#" class="popup-contact__form">
-					<div class="input-box">
-						<input type="text" id="name"  class="popup-contact__input" required>
-						<label for="name" class="popup-contact__label">Как к вам обращаться</label>
+					<div class="input-box  input-box--name" data-attr="name">
+						<input
+							type="text"
+							id="name"
+							class="popup-contact__input"
+							required
+						/>
+						<label for="name" class="popup-contact__label"
+							>Как к вам обращаться</label
+						>
 					</div>
-					<div class="input-box">
-						<input type="phone" id="phone"  class="popup-contact__input" required>
-						<label for="phone" class="popup-contact__label">Как с вами связаться</label>
+
+					<fieldset id="input-box__check" class="input-box__check">
+						<legend>Как с вами связаться</legend>
+
+						<input
+							type="radio"
+							id="check-phone"
+							name="contact-check"
+							value="phone"
+							checked
+							class="input-box__check-type"
+						/>
+						<label for="check-phone">
+							<img class="input-box__check-img" title="телефон" src="./icon/phone.svg" alt="">
+						</label>
+
+						<input
+							type="radio"
+							id="check-mail"
+							name="contact-check"
+							value="email"
+							class="input-box__check-type"
+						/>
+						<label for="check-mail">
+							<img class="input-box__check-img" title="e-mail" src="./icon/email.svg" alt="">
+						</label>
+
+						<input
+							type="radio"
+							id="check-skype"
+							name="contact-check"
+							value="skype"
+							class="input-box__check-type"
+						/>
+						<label for="check-skype">
+							<img class="input-box__check-img" title="Skype" src="./icon/skype.svg" alt="">
+						</label>
+
+						<input
+							type="radio"
+							id="check-whatsapp"
+							name="contact-check"
+							value="whatsapp"
+							class="input-box__check-type"
+						/>
+						<label for="check-whatsapp">
+							<img class="input-box__check-img" title="Whats App" src="./icon/whatsapp.svg" alt="">
+						</label>
+
+						<input
+							type="radio"
+							id="check-telegram"
+							name="contact-check"
+							value="telegram"
+							class="input-box__check-type"
+						/>
+						<label for="check-telegram">
+							<img class="input-box__check-img" title="Telegram" src="./icon/telegram.svg" alt="">
+						</label>
+
+						<input
+							type="radio"
+							id="check-vk"
+							name="contact-check"
+							value="vk"
+							class="input-box__check-type"
+						/>
+						<label for="check-vk">
+							<img class="input-box__check-img" title="VK" src="./icon/vkontakte.svg" alt="">
+						</label>
+					</fieldset>
+
+					<div class="input-box  input-box--active" data-attr="phone">
+						<input
+							type="phone"
+							id="phone"
+							class="popup-contact__input"
+							required
+						/>
+						<label for="phone" class="popup-contact__label"
+							>Укажите номер телефона</label
+						>
 					</div>
-					<textarea name="message" id="message" class="popup-contact__textarea" cols="30" rows="10" spellcheck="true" placeholder="Оставьте ваше сообщение..."></textarea>
+
+					<div class="input-box" data-attr="email">
+						<input
+							type="email"
+							id="email"
+							class="popup-contact__input"
+							required
+						/>
+						<label for="email" class="popup-contact__label"
+							>Укажите ваш e-mail</label
+						>
+					</div>
+
+					<textarea
+						name="message"
+						id="message"
+						class="popup-contact__textarea"
+						cols="30"
+						rows="10"
+						spellcheck="true"
+						placeholder="Оставьте ваше сообщение..."
+					></textarea>
 					<button class="popup-contact__btn">Отправить</button>
 				</form>
 			</div>
