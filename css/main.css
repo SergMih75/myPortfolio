@@ -8,14 +8,58 @@
 }
 
 .section-end {
-  width: 50vw;
-  margin: 0 auto;
-  margin-bottom: 17px;
+	width: 50vw;
+	margin: 0 auto;
+	margin-bottom: 17px;
 
-  border: 3px solid #d7af464d;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+	border: 3px solid #d7af464d;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 }
+
+/* Кастомизация скролла */
+html,
+body {
+	scrollbar-color: #458245 #714826; /* «цвет ползунка» «цвет полосы скроллбара» */
+	scrollbar-width: auto; /* толщина */
+}
+
+/* Для остальных браузеров: */
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+	width: 8px; /* ширина для вертикального скролла */
+	height: 8px; /* высота для горизонтального скролла */
+	background-color: #29066b;
+}
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+	background-color: #e0b3cf;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+
+/* Стрелки */
+::-webkit-scrollbar-button:vertical:start:decrement,
+::-webkit-scrollbar-button:vertical:end:increment,
+::-webkit-scrollbar-button:horizontal:start:decrement,
+::-webkit-scrollbar-button:horizontal:end:increment {
+  display: none;
+}
+/* ::-webkit-scrollbar-button:vertical:start:decrement {
+  background-color: #f6f8f4;
+}
+::-webkit-scrollbar-button:vertical:end:increment {
+	background-color: #f6f8f4;
+}
+::-webkit-scrollbar-button:horizontal:start:decrement {
+	background-color: #f6f8f4;
+}
+::-webkit-scrollbar-button:horizontal:end:increment {
+	background-color: #f6f8f4;
+} */

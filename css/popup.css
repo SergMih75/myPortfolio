@@ -18,15 +18,12 @@
 	width: 60%;
 	padding-top: 15px;
 	padding-bottom: 15px;
-
 	position: relative;
 	z-index: 3;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
 	box-shadow: -4px 7px 25px #60615dd3;
 	background-color: rgba(241, 239, 236, 0.836);
 	border-radius: 8px;
@@ -34,6 +31,17 @@
 	-moz-border-radius: 8px;
 	-ms-border-radius: 8px;
 	-o-border-radius: 8px;
+	animation: popup-open 800ms ;
+	-webkit-animation: popup-open 800ms ;
+}
+
+@keyframes popup-open {
+	0% {
+		scale: 0;
+	}
+	100% {
+		scale: 1;
+	}
 }
 
 .popup-contact__close {
@@ -86,11 +94,13 @@
 	width: 100%;
 	position: relative;
 
-    display: none;
+	display: none;
 }
 
 .input-box--active,
-.input-box--name {display: block;}
+.input-box--name {
+	display: block;
+}
 
 .popup-contact__input {
 	width: 100%;
@@ -150,10 +160,10 @@
 	width: 85%;
 	padding: 8px;
 	margin: 0 auto;
-    margin-bottom: 14px;
+	margin-bottom: 14px;
 
-    display: flex;
-    justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
 
 	border: 1px solid #5e72b6;
 	border-radius: 8px;
@@ -172,33 +182,37 @@
 	color: #007227;
 }
 
-.input-box__check-img {
-    width: 25px;
-    height: 25px;
-    padding: 2.5px;
+input[type='radio'] {
+	display: none;
+}
 
-    background-color: #47da7b;
-    border-radius: 50%;
-    object-fit: contain;
-    cursor: pointer;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    transition: 300ms;
-    -webkit-transition: 300ms;
-    -moz-transition: 300ms;
-    -ms-transition: 300ms;
-    -o-transition: 300ms;
+.input-box__check-img {
+	width: 25px;
+	height: 25px;
+	padding: 2.5px;
+
+	background-color: #47da7b;
+	border-radius: 50%;
+	object-fit: contain;
+	cursor: pointer;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	transition: 300ms;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
 }
 
 .input-box__check-img:hover {
-    box-shadow: -3px 3px 10px #007227;
-    transition: 300ms;
-    -webkit-transition: 300ms;
-    -moz-transition: 300ms;
-    -ms-transition: 300ms;
-    -o-transition: 300ms;
+	box-shadow: -3px 3px 10px #007227;
+	transition: 300ms;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
 }
 
 @media (max-width: 600px) {
