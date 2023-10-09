@@ -79,7 +79,7 @@
 
 .work-item__text {
 	width: 100%;
-	height: calc(100% - 30px);
+	height: calc(100% - 10px);
 	padding-top: 10px;
 	padding-bottom: 10px;
 
@@ -88,7 +88,7 @@
 	left: 0;
 
 	overflow-y: auto;
-	background-color: #64a5b8bf;
+	background-color: #98d7e9;
 	backdrop-filter: blur(5px);
 }
 
@@ -113,7 +113,7 @@
 .work-item__text-subtitle,
 .work-item__text-text {
 	color: #ffff;
-	text-shadow: -1px 1px 2px #3a3937e8;
+	text-shadow: -2px 2px 5px #3a3937e8;
 }
 
 .work-item__text-subtitle {
