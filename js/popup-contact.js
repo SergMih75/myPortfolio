@@ -1,16 +1,26 @@
 // ! открытие модального окна обратной связи по клику на кнопку
-let feedback = document.querySelectorAll('.nav-desktop-btn')
-
-feedback.forEach(feedback=>{
-	feedback.addEventListener('click', () => {
+document.querySelector('.nav-desktop-btn').addEventListener('click', () => {
 	document.querySelector('.popup-contact').style.display = 'flex'
 	document.body.style.position = 'fixed'
 	})
-})
+
+	document.querySelector('.nav-desktop-btn--footer').addEventListener('click', () => {
+	document.querySelector('.popup-contact').style.display = 'flex'
+	document.body.style.position = 'fixed'
+	})
 
 // ! закрытие модального окна обратной связи
 document
 	.querySelector('.popup-contact__close').addEventListener('click', () => {
+		document.querySelector('.popup-contact').style.display = 'none'
+		document.body.style.position = 'relative'
+	})
+
+	document.querySelector('.popup-contact__table').addEventListener('click', function(){
+		event.stopPropagation()
+	})
+
+	document.querySelector('.popup-contact').addEventListener('click', () => {
 		document.querySelector('.popup-contact').style.display = 'none'
 		document.body.style.position = 'relative'
 	})
@@ -35,7 +45,7 @@ contactCheck.forEach(contactCheck => {
 
 
 let num = document.querySelectorAll('.data-input')
-num.forEach(num=>console.log('num: ', num.value))
+// num.forEach(num=>console.log('num: ', num.value))
 
 const TOKEN = '6628683979:AAFffs5cT7FnU1lcNuDBsxhdGRnOpo5am3s'
 const CHAT_ID = '-1001641584324'
@@ -55,7 +65,6 @@ document.querySelector('.popup-contact__form').addEventListener('submit', functi
 	message += `<b>Skype: </b> ${this.skype.value}\n`
 	message += `<b>WhatsApp: </b> ${this.whatsApp.value}\n`
 	message += `<b>Telegram: </b> ${this.telegram.value}\n`
-	message += `<b>Вконтакте: </b> ${this.vk.value}\n`
 	message += `<b>Вопрос: </b> ${this.message.value}\n`
 	console.log(message);
 	// Формирование сообщения
@@ -77,6 +86,7 @@ document.querySelector('.popup-contact__form').addEventListener('submit', functi
 		console.warn(err);
 	})
 	.finally(() =>{
-		console.log('END');
+		document.querySelector('.popup-contact').style.display = 'none'
+		document.body.style.position = 'relative'
 	})
 })

@@ -50,9 +50,9 @@
 	right: 8px;
 
 	font-size: 14px;
-	font-weight: 300;
+	font-weight: 400;
 	cursor: pointer;
-	color: #5d138fd3;
+	color: #d8190bfa;
 }
 
 .popup-contact__close:hover,
@@ -126,7 +126,7 @@
 
 	font-size: 14px;
 	font-weight: 300;
-	color: #007227;
+	color: #0e1249;
 }
 
 .popup-contact__input:focus ~ .popup-contact__label,
@@ -173,13 +173,18 @@
 	-o-border-radius: 8px;
 }
 
-.input-box__check legend {
+.input-box__input {
+	border: none;
+}
+
+.input-box__check legend,
+.input-box__input legend {
 	margin-left: 10px;
 
-	font-size: 10px;
-	font-weight: 200;
+	font-size: 12px;
+	font-weight: 300;
 	font-style: italic;
-	color: #007227;
+	color: #11076d;
 }
 
 input[type='radio'] {

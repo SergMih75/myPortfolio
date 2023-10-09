@@ -110,7 +110,7 @@
 				<a target="_blank" title="Вконтакте" href="https://vk.com/id825366813">Вконтакте</a>
 				<a target="_blank" title="Эл. почта" href="mailto:9604720341@bk.ru">Эл. почта</a>
 				<a target="_blank" title="Скайп" href="skype:smskype11">Скайп</a>
-				<a class="nav-desktop-btn  nav-desktop-btn--footer" title="Обратная связь" href="#popup-contact">Перезвонить</a>
+				<a class="nav-desktop-btn--footer" title="Обратная связь" href="#popup-contact">Перезвонить</a>
 			</div>
 		</div>
 
@@ -136,7 +136,7 @@
 					</div>
 
 					<fieldset id="input-box__check" class="input-box__check">
-						<legend>Как с вами связаться</legend>
+						<legend>Ваши контакты (можно не один)</legend>
 
 						<input
 							type="radio"
@@ -145,6 +145,7 @@
 							value="phone"
 							checked
 							class="input-box__check-type"
+							inputmode="tel"
 						/>
 						<label for="check-phone">
 							<img class="input-box__check-img" title="телефон" src="./icon/phone.svg" alt="">
@@ -156,6 +157,7 @@
 							name="contact-check"
 							value="email"
 							class="input-box__check-type"
+							inputmode="email"
 						/>
 						<label for="check-mail">
 							<img class="input-box__check-img" title="e-mail" src="./icon/email.svg" alt="">
@@ -193,101 +195,67 @@
 						<label for="check-telegram">
 							<img class="input-box__check-img" title="Telegram" src="./icon/telegram.svg" alt="">
 						</label>
-
-						<input
-							type="radio"
-							id="check-vk"
-							name="contact-check"
-							value="vk"
-							class="input-box__check-type"
-						/>
-						<label for="check-vk">
-							<img class="input-box__check-img" title="VK" src="./icon/vkontakte.svg" alt="">
-						</label>
 					</fieldset>
 
-					<div class="input-box  input-box--active" data-attr="phone">
+					<div class="input-box  input-box--active" 
+					data-attr="phone">
+						<fieldset class="input-box__input">
+						<legend class="">Укажите номер телефона</legend>
 						<input
 							type="phone"
 							id="phone"
 							class="popup-contact__input  data-input"
 							name="client_phone"
-							value="+"
-							required
 						/>
-						<label for="phone" class="popup-contact__label"
-							>Укажите номер телефона</label
-						>
+						</fieldset>
 					</div>
 
 					<div class="input-box" data-attr="email">
+						<fieldset class="input-box__input">
+						<legend class="">Укажите ваш e-mail</legend>
 						<input
 							type="email"
 							id="email"
 							class="popup-contact__input  data-input"
 							name="client_email"
-							value="11"
-							required
 						/>
-						<label for="email" class="popup-contact__label"
-							>Укажите ваш e-mail</label
-						>
+						</fieldset>
 					</div>
 
 					<div class="input-box" data-attr="skype">
+						<fieldset class="input-box__input">
+						<legend class="">Укажите номер Skype</legend>
 						<input
 							type="text"
 							id="skype"
 							class="popup-contact__input  data-input"
 							name="client_skype"
-							value=" "
-							required
 						/>
-						<label for="skupe" class="popup-contact__label"
-							>Укажите ваш Skype</label
-						>
+						</fieldset>
 					</div>
 
 					<div class="input-box" data-attr="whatsapp">
+						<fieldset class="input-box__input">
+						<legend class="">Укажите номер WhatsApp</legend>
 						<input
 							type="text"
 							id="whatsApp"
 							class="popup-contact__input  data-input"
 							name="client_whatsapp"
-							value="+"
-							required
 						/>
-						<label for="whatsApp" class="popup-contact__label"
-							>Укажите номер WhatsApp</label
-						>
+						</fieldset>
 					</div>
 
 					<div class="input-box" data-attr="telegram">
+						<fieldset class="input-box__input">
+						<legend class="">Укажите Telegram</legend>
 						<input
 							type="text"
 							id="telegram"
 							class="popup-contact__input  data-input"
 							name="client_tg"
-							value="@"
-							required
 						/>
-						<label for="telegram" class="popup-contact__label"
-							>Укажите номер Telegram</label
-						>
-					</div>
-
-					<div class="input-box" data-attr="vk">
-						<input
-							type="text"
-							id="vk"
-							class="popup-contact__input  data-input"
-							name="client_vk"
-							value="id"
-							required
-						/>
-						<label for="vk" class="popup-contact__label"
-							>Укажите номер VK</label
-						>
+						</fieldset>
 					</div>
 
 					<textarea
